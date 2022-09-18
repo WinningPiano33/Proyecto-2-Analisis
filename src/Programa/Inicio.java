@@ -49,7 +49,7 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         x4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        x4.setText("x⁴");
+        x4.setText("x²");
         x4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 x4ActionPerformed(evt);
@@ -69,10 +69,10 @@ public class Inicio extends javax.swing.JFrame {
                         .addGap(144, 144, 144)
                         .addComponent(jLabel2))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(233, 233, 233)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(x4)
-                            .addComponent(x3))))
+                        .addGap(240, 240, 240)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(x3)
+                            .addComponent(x4))))
                 .addContainerGap(46, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -82,11 +82,11 @@ public class Inicio extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
-                .addGap(83, 83, 83)
-                .addComponent(x3)
-                .addGap(35, 35, 35)
+                .addGap(93, 93, 93)
                 .addComponent(x4)
-                .addContainerGap(117, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(x3)
+                .addContainerGap(124, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -114,7 +114,7 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_x3ActionPerformed
 
     private void x4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x4ActionPerformed
-        Datosx4 a = new Datosx4();
+        Datosx2 a = new Datosx2();
         a.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_x4ActionPerformed
