@@ -16,6 +16,7 @@ public class Resultadox3 extends javax.swing.JFrame {
      */
     public Resultadox3() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
     
     public Resultadox3(String dx3, String dx2, String dx1, String dx0) {
