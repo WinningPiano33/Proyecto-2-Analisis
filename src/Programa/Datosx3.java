@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Programa;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author GUILLERMO
@@ -20,7 +20,7 @@ public class Datosx3 extends javax.swing.JFrame {
     }
     
     String dx3, dx2, dx1, dx0;
-    
+    int nx2, nx1, nx0;
     int check;
     
     public void setVariables() {
@@ -29,8 +29,20 @@ public class Datosx3 extends javax.swing.JFrame {
         dx1 = x1.getText();
         dx0 = x0.getText();
         
+        nx2 = Integer.parseInt(dx2);
+        nx1 = Integer.parseInt(dx1);
+        nx0 = Integer.parseInt(dx0);
     }
-
+    public void validacionCheck(){
+        try{
+            check = Integer.parseInt(dx2);
+            check = Integer.parseInt(dx1);
+            check = Integer.parseInt(dx0);
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null, "Inserte valores enteros, y no ningún otro tipo de caracter.");
+                return;
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -53,7 +65,7 @@ public class Datosx3 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 0));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 153));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel3.setText("x²");
