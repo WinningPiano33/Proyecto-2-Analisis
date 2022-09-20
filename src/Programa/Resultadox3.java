@@ -21,6 +21,7 @@ public class Resultadox3 extends javax.swing.JFrame {
     
     public Resultadox3(String dx3, String dx2, String dx1, String dx0) {
         initComponents();
+        this.setLocationRelativeTo(null);
         x3.setText(dx3);
         x2.setText(dx2);
         x1.setText(dx1);
@@ -145,7 +146,7 @@ public class Resultadox3 extends javax.swing.JFrame {
         Vd2_x0 = (Vd1_x0) + (Vds1_x0);
         d2_x0.setText(Float.toString(Vd2_x0));
         
-        if(Vd2_x0 < 0.1) {
+        if(Vd2_x0 < 0.1 && Vd2_x0 > -0.1) {
             instruccionText.setText("Se encontró un valor de x aproximado a la raíz de la ecuación.");
             
             nuevaR = Math.round(xActual);
@@ -191,7 +192,7 @@ public class Resultadox3 extends javax.swing.JFrame {
         Vd2_x0 = (Vd1_x0) + (Vds1_x0);
         d2_x0.setText(Float.toString(Vd2_x0));
         
-        if(Vd2_x0 < 0.1) {
+        if(Vd2_x0 < 0.1 && Vd2_x0 > -0.1) {
             instruccionText.setText("Se encontró un valor de x aproximado a la raíz de la ecuación.");
             
             nuevaR = Math.round(xActual);
@@ -202,7 +203,7 @@ public class Resultadox3 extends javax.swing.JFrame {
             r_x2.setText(Float.toString(Vr_x2));
             
             Vds2_x1 = ((xActual) * (Vr_x2));
-            ds2_x2.setText(Float.toString(Vds2_x2));
+            ds2_x1.setText(Float.toString(Vds2_x1));
             
             Vr_x1 = (Vd2_x1) + (Vds2_x1);
             r_x1.setText(Float.toString(Vr_x1));
