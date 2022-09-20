@@ -110,6 +110,7 @@ public class Inicio extends javax.swing.JFrame {
     private void x3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_x3ActionPerformed
         Datosx3 a = new Datosx3();
         a.setVisible(true);
+        
         this.setVisible(false);
     }//GEN-LAST:event_x3ActionPerformed
 
